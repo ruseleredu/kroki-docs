@@ -12,6 +12,14 @@ The downdoc package provides both a CLI (command: downdoc) and a JavaScript func
 - https://github.com/opendevise/downdoc
 - https://app.mdedit.ai/tools/converter/asciidoc-to-markdown
 
+```sh
+for file in *.adoc; do npx downdoc "$file"; done
+```
+
+```sh
+for file in *.adoc; do npx downdoc "$file" -o "${file%.adoc}.mdx"; done
+```
+
 ## Migrating
 
 Migrating from **Antora** (which uses **AsciiDoc** and a multi-repo/component structure) to **Docusaurus** (which uses **Markdown/MDX** and a React-based single-repo architecture) requires handling three main differences:

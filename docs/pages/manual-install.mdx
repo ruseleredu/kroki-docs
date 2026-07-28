@@ -1,0 +1,46 @@
+---
+title: Manual Install
+sidebar_label: Manual Install
+sidebar_position: 2
+description: This section covers installing Kroki locally.
+---
+
+# Manual Install
+
+Assumptions:
+
+- [x] You’ve Linux experience.
+- [x] You’ve installed Java 11 or greater on your Linux machine.
+
+On this page, you’ll learn:
+
+- [x] How to run Kroki
+- [x] How to configure Kroki
+
+## Download and Run Kroki
+
+You can download the latest _standalone executable jar_ from the GitHub [releases page](https://github.com/yuzutech/kroki/releases).
+
+Once you’ve downloaded the _jar_ file, open a terminal and type:
+
+java -jar kroki-server.jar
+
+The above command will start a web server on port `8000`.
+You can change the port using an environment variable, or a Java system property named `KROKI_PORT`.
+
+<dl>
+  <dt>
+    <strong>❗ IMPORTANT</strong>
+  </dt>
+</dl>
+
+The Kroki server does _not_ include diagram libraries!\
+You will either need to install them manually on your system or use [Docker or Podman](install.mdx).
+
+For instance, you can install GraphViz manually on your system (i.e., `dot` binary) and configure the path using a system property:
+
+java -DKROKI_DOT_BIN_PATH=/path/to/dot -jar kroki-server.jar
+
+## Learn more
+
+- [Configure Kroki](configuration.mdx)

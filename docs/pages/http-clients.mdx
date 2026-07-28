@@ -1,0 +1,51 @@
+---
+title: HTTP Clients
+sidebar_label: HTTP Clients
+sidebar_position: 8
+description: You can interact with Kroki using any HTTP client.
+---
+
+# HTTP Clients
+
+You can interact with _Kroki_ using **any HTTP client**.
+In the following example, we will demonstrate how to send requests using _cURL_ and _HTTPie_.
+
+Using [_cURL_](https://curl.haxx.se/) to interact with the API is straightforward, open a terminal and type:
+
+```bash
+curl https://kroki.io/graphviz/svg --data-raw 'digraph G {Hello->World}'
+```
+
+If you are more familiar with [_HTTPie_](https://httpie.org/), you can send a JSON request:
+
+```bash
+http https://kroki.io/ diagram_type='graphviz' output_format='svg' diagram_source='digraph G {Hello->World}'
+```
+
+Both _cURL_ and _HTTPie_ can also send a `GET` request with the diagram encoded:
+
+curl https://kroki.io/graphviz/svg/eNpLyUwvSizIUHBXqPZIzcnJ17ULzy_KSanlAgB1EAjQ
+
+http https://kroki.io/graphviz/svg/eNpLyUwvSizIUHBXqPZIzcnJ17ULzy_KSanlAgB1EAjQ
+
+It’s also possible to send a file, for instance an Entity Relationship Diagram named _project.erd_:
+
+```erd
+[Person]
+*name
+height
+weight
++birth_location_id
+
+[Location]
+*id
+city
+state
+country
+
+Person *--1 Location
+```
+
+curl https://kroki.io/erd/svg --data-binary '@project.erd'
+
+cat project.erd | http https://kroki.io/erd/svg Content-Type:text/plain
