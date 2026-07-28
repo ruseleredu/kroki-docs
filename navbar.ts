@@ -5,9 +5,8 @@ const navbarItems: NavbarItem[] = [
         type: 'docSidebar',
         sidebarId: 'tutorialSidebar',
         position: 'left',
-        label: 'Tutorial',
+        label: 'Kroki',
     },
-    { to: '/blog', label: 'Blog', position: 'left' },
     {
         href: 'https://github.com/ruseleredu/kroki-docs',
         label: 'GitHub',
