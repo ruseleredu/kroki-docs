@@ -1,26 +1,240 @@
 ---
+title: Classification
+sidebar_label: Classification
 sidebar_position: 1
+description: Here is the classification of the provided tools.
 ---
 
-# Kroki Intro
+# Classification
 
-Let's discover **Kroki in less than 5 minutes**.
+Here is the classification of the provided tools (primarily components of the **Kroki** diagram ecosystem) grouped by their primary domain and usage:
 
-## Getting Started
+---
 
-- https://kroki.io/
-- https://docs.kroki.io/kroki/
+### 1. General-Purpose & Multi-Paradigm Diagramming
 
-# Kroki Documentation
+- **Mermaid** (`11.15.0`) – Markdown-inspired syntax for generating flowcharts, sequence diagrams, and charts.
+- **PlantUML** (`1.2026.6`) – Text-based language for creating UML diagrams and system architectures.
+- **Graphviz / DOT** (`14.1.3`) – Open-source graph visualization software using the DOT language.
+- **D2** (`0.7.1`) – Modern, declarative diagram scripting language.
+- **Diagrams.net** (`16.2.4`) – Open-source visual diagram editor engine (Draw.io).
+- **Excalidraw** (`0.18.1`) – Virtual whiteboard tool for hand-drawn, sketch-style diagrams.
+- **UMlet** (`15.1`) – Free, interactive UML diagram drawing tool.
+- **TikZ** (`3.1.9a`) – Programmatic graphics package for TeX/LaTeX.
 
-Convert plain text diagrams to images !
+---
 
-Kroki provides a unified HTTP API with support for BlockDiag (BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, RackDiag), BPMN, Bytefield, C4 (with PlantUML), Diagrams.net (experimental), Ditaa, Erd, Excalidraw, GoAT, GraphViz, Mermaid, Nomnoml, PlantUML, Structurizr, SvgBob, Symbolator, UMLet, Vega, Vega-Lite, WaveDrom and WireViz…​ and more to come!
+### 2. Software Architecture & Modeling
 
-Kroki is available as a Self-Managed instance.
-We are also actively looking for sponsors to provide Kroki as a free service:
+- **C4PlantUML** (`1.2026.6`) – PlantUML macros and extensions for rendering the C4 software architecture model.
+- **Structurizr** (`6.2.2`) – Tooling for visualizing and documenting software architecture based on the C4 model.
+- **Nomnoml** (`1.7.0`) – Lightweight tool for drawing UML class diagrams from simple grammar.
 
-## Self-Managed
+---
 
-Select this option if you want to download and install Kroki on your own infrastructure or in our public cloud environment.
-Please refer to the documentation to install Kroki.
+### 3. Network, Infrastructure & Layouts (BlockDiag Family)
+
+- **BlockDiag** (`3.4.2`) – Block diagram generation tool.
+- **ActDiag** (`3.4.2`) – Activity diagram generator.
+- **NwDiag** (`3.4.2`) – Network diagram generator.
+- **RackDiag** (`3.4.2`) – Server rack layout diagram generator.
+- **PacketDiag** (`3.4.2`) – Network packet structure diagram generator.
+- **SeqDiag** (`3.4.2`) – Sequence diagram generator.
+- **WireViz** (`0.3.3`) – Documentation tool for cables, wiring harnesses, and pinout diagrams.
+
+---
+
+### 4. Databases & Entity Relationships
+
+- **DBML** (`1.0.31`) – Database Markup Language for defining and documenting relational database schemas.
+- **ERD** (`0.2.3`) – Entity-Relationship diagram generator.
+
+---
+
+### 5. Hardware, Timing & Protocols
+
+- **WaveDrom** (`3.6.1`) – JavaScript/JSON-based digital timing diagram rendering engine.
+- **Bytefield** (`1.11.0`) – Tool for generating network protocol and memory layout packet diagrams.
+- **Symbolator** (`1.2.2`) – Schematic symbol generator from HDL (Hardware Description Language) code.
+
+---
+
+### 6. Data Visualization
+
+- **Vega** (`6.2.0`) – Visualization grammar for declarative interactive graphics.
+- **Vega-Lite** (`6.4.3`) – High-level specification grammar built on top of Vega.
+
+---
+
+### 7. ASCII Art, Text-to-SVG & Ecosystem Aggregators
+
+- **Ditaa** (`1.0.3`) – Converts ASCII art text diagrams into clean vector graphics.
+- **SvgBob** (`0.7.6`) – Converts ASCII art diagrams into pristine SVG.
+- **Goat** (`undefined`) – Go-based ASCII-to-SVG diagram parser and renderer.
+- **Pikchr** (`7269f78c4a`) – PIC-inspired markup language for technical diagrams.
+- **BPMN** (`18.18.0`) – Business Process Model and Notation rendering engine.
+- **Kroki** (`0.31.2`) – Unified meta-aggregator API service that hosts and runs all of the above diagramming tools.
+
+To map these diagram domains as multiple documentation instances (multi-instance docs) in Docusaurus, you can use the built-in plugin architecture (`@docusaurus/plugin-content-docs`).
+
+Each functional category becomes an independent documentation plugin instance, allowing you to organize your files into separate directories (e.g., `docs-architecture`, `docs-hardware`, etc.), maintain separate sidebars, and expose them at distinct URL routes.
+
+Here is how you can map and configure them in your `docusaurus.config.js`:
+
+---
+
+## Docusaurus Multi-Instance Docs Configuration
+
+### 1. Directory Structure Mapping
+
+Organize your source content directory (`/docs` or a custom root) to match each domain instance:
+
+```text
+my-website/
+├── docs-general/          # General-Purpose & Multi-Paradigm
+├── docs-architecture/     # Software Architecture & Modeling
+├── docs-infrastructure/   # Network, Infrastructure & Layouts
+├── docs-database/         # Databases & Entity Relationships
+├── docs-hardware/         # Hardware, Timing & Protocols
+├── docs-dataviz/          # Data Visualization
+└── docs-ascii/            # ASCII Art & Ecosystem Aggregators
+```
+
+---
+
+### 2. Docusaurus Configuration (`docusaurus.config.js`)
+
+Add each domain as a separate instance of the content docs plugin. This assigns them dedicated route bases (`routeBasePath`) and sidebar configurations.
+
+```javascript
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  title: "My Documentation Hub",
+  tagline: "Technical Documentation with Kroki Integration",
+  url: "https://your-docs-site.com",
+  baseUrl: "/",
+  // ... other standard config ...
+
+  presets: [
+    [
+      "classic",
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        // Disable the default single 'docs' instance if you want everything modularized
+        docs: false,
+        blog: {
+          showReadingTime: true,
+        },
+        theme: {
+          customCss: require.resolve("./src/css/custom.css"),
+        },
+      }),
+    ],
+  ],
+
+  plugins: [
+    // 1. General-Purpose & Multi-Paradigm Diagramming
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "general",
+        path: "docs-general",
+        routeBasePath: "general",
+        sidebarPath: require.resolve("./sidebarsGeneral.js"),
+      },
+    ],
+
+    // 2. Software Architecture & Modeling
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "architecture",
+        path: "docs-architecture",
+        routeBasePath: "architecture",
+        sidebarPath: require.resolve("./sidebarsArchitecture.js"),
+      },
+    ],
+
+    // 3. Network, Infrastructure & Layouts (BlockDiag Family)
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "infrastructure",
+        path: "docs-infrastructure",
+        routeBasePath: "infrastructure",
+        sidebarPath: require.resolve("./sidebarsInfrastructure.js"),
+      },
+    ],
+
+    // 4. Databases & Entity Relationships
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "database",
+        path: "docs-database",
+        routeBasePath: "database",
+        sidebarPath: require.resolve("./sidebarsDatabase.js"),
+      },
+    ],
+
+    // 5. Hardware, Timing & Protocols
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "hardware",
+        path: "docs-hardware",
+        routeBasePath: "hardware",
+        sidebarPath: require.resolve("./sidebarsHardware.js"),
+      },
+    ],
+
+    // 6. Data Visualization
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "dataviz",
+        path: "docs-dataviz",
+        routeBasePath: "dataviz",
+        sidebarPath: require.resolve("./sidebarsDataviz.js"),
+      },
+    ],
+
+    // 7. ASCII Art, Text-to-SVG & Ecosystem Aggregators
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "ascii",
+        path: "docs-ascii",
+        routeBasePath: "ascii",
+        sidebarPath: require.resolve("./sidebarsAscii.js"),
+      },
+    ],
+  ],
+};
+
+module.exports = config;
+```
+
+---
+
+### 3. Navbar Integration (`docusaurus.config.js`)
+
+Expose the multi-instances easily in your top navigation bar (`themeConfig.navbar`) so users can jump between domains:
+
+```javascript
+themeConfig: {
+  navbar: {
+    title: 'Diagram Docs',
+    items: [
+      { to: '/general/intro', label: 'General', position: 'left' },
+      { to: '/architecture/intro', label: 'Architecture', position: 'left' },
+      { to: '/infrastructure/intro', label: 'Infrastructure', position: 'left' },
+      { to: '/database/intro', label: 'Databases', position: 'left' },
+      { to: '/hardware/intro', label: 'Hardware', position: 'left' },
+      { to: '/dataviz/intro', label: 'Data Viz', position: 'left' },
+      { to: '/ascii/intro', label: 'ASCII & Tools', position: 'left' },
+    ],
+  },
+}
+
+```

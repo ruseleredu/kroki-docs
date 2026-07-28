@@ -57,7 +57,94 @@ const config: Config = {
     locales: ['en'],
   },
 
-  plugins: ["@cmfcmf/docusaurus-search-local"],
+  // plugins: ["@cmfcmf/docusaurus-search-local"],
+
+  plugins: [
+    // 1. General-Purpose & Multi-Paradigm Diagramming
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'general',
+        path: 'docs-general',
+        routeBasePath: 'general',
+        sidebarPath: require.resolve('./sidebarsGeneral.ts'),
+      },
+    ],
+
+    // 2. Software Architecture & Modeling
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'architecture',
+        path: 'docs-architecture',
+        routeBasePath: 'architecture',
+        sidebarPath: require.resolve('./sidebarsArchitecture.ts'),
+      },
+    ],
+
+    // 3. Network, Infrastructure & Layouts (BlockDiag Family)
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'infrastructure',
+        path: 'docs-infrastructure',
+        routeBasePath: 'infrastructure',
+        sidebarPath: require.resolve('./sidebarsInfrastructure.ts'),
+      },
+    ],
+
+    // 4. Databases & Entity Relationships
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'database',
+        path: 'docs-database',
+        routeBasePath: 'database',
+        sidebarPath: require.resolve('./sidebarsDatabase.ts'),
+      },
+    ],
+
+    // 5. Hardware, Timing & Protocols
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'hardware',
+        path: 'docs-hardware',
+        routeBasePath: 'hardware',
+        sidebarPath: require.resolve('./sidebarsHardware.ts'),
+      },
+    ],
+
+    // 6. Data Visualization
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'dataviz',
+        path: 'docs-dataviz',
+        routeBasePath: 'dataviz',
+        sidebarPath: require.resolve('./sidebarsDataviz.ts'),
+      },
+    ],
+
+    // 7. ASCII Art, Text-to-SVG & Ecosystem Aggregators
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'ascii',
+        path: 'docs-ascii',
+        routeBasePath: 'ascii',
+        sidebarPath: require.resolve('./sidebarsAscii.ts'),
+      },
+    ],
+    [
+      "@cmfcmf/docusaurus-search-local",
+      {
+        // Options here
+      },
+    ],
+
+
+  ],
 
   presets: [
     [
