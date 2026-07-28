@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkroki_docs=self.webpackChunkkroki_docs||[]).push([["3220"],{1912(o){o.exports=JSON.parse('{"blogBasePath":"/kroki-docs/blog","blogTitle":"Blog","authorsListPath":"/kroki-docs/blog/authors"}')}}]);
