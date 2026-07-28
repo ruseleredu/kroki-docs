@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkroki_docs=self.webpackChunkkroki_docs||[]).push([["2161"],{7706(s){s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"hardware"}')}}]);

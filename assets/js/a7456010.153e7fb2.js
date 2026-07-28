@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkroki_docs=self.webpackChunkkroki_docs||[]).push([["56"],{8552(s){s.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);
