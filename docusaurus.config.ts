@@ -8,7 +8,7 @@ import footerconst from "./footer";
 
 const config: Config = {
   title: 'Kroki Docs',
-  tagline: 'DCreates diagrams from textual descriptions!',
+  tagline: 'Creates diagrams from textual descriptions!',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
