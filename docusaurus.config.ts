@@ -97,7 +97,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Kroki Docs',
+      title: '',
       logo: {
         alt: 'Kroki Docs Logo',
         src: 'img/logo.svg',
