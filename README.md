@@ -96,3 +96,9 @@ Run Automation Script for katex
 ```bash
 node scripts/download-katex.js
 ```
+
+To clear the Rspack cache via the CLI:
+
+```bash
+rmdir /s /q node_modules\.cache\rspack
+```
