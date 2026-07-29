@@ -1,11 +1,27 @@
 .features {
   display: flex;
-  align-items: center;
-  padding: 2rem 0;
+  flex-direction: column;
+  padding: 1rem 0;
   width: 100%;
+}
+
+.featureSection {
+  padding: 1rem 0;
+}
+
+/* Optional: Alternate background color for every second section */
+.featureSection:nth-child(even) {
+  background-color: var(--ifm-color-emphasis-100);
 }
 
 .featureSvg {
   height: 200px;
   width: 200px;
+}
+
+.sectionDivider {
+  margin: 1rem auto;
+  max-width: 200px;
+  border: 0;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
 }
