@@ -242,12 +242,6 @@ const FEATURE_SECTIONS: FeatureSection[] = [
         link: '/ascii/ditaa/intro',
       },
       {
-        title: 'kroki',
-        Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-        description: 'Description for kroki feature (v0.31.1).',
-        link: '/ascii/kroki/intro',
-      },
-      {
         title: 'goat',
         Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
         description: 'Description for goat feature (vundefined).',
