@@ -95,6 +95,16 @@ const navbarItems: NavbarItem[] = [
         ],
     },
     {
+        to: '/docs/live',
+        label: 'Live Editor',
+        position: 'right',
+        type: 'dropdown',
+        items: [
+            { href: 'https://mermaid.live', label: 'Mermaid' },
+        ],
+
+    },
+    {
         href: 'https://github.com/ruseleredu/kroki-docs',
         label: 'GitHub',
         position: 'right',
