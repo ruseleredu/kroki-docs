@@ -1,8 +1,8 @@
 {
-  "label": "svgbob",
-  "position": 30,
+  "label": "SVGBob",
+  "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "svgbob related documentation and resources."
+    "description": "Converts ASCII art diagrams into pristine SVG."
   }
 }

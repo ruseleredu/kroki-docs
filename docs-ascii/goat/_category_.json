@@ -1,8 +1,8 @@
 {
-  "label": "goat",
-  "position": 26,
+  "label": "GoAT",
+  "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "goat related documentation and resources."
+    "description": "Go-based ASCII-to-SVG diagram parser and renderer."
   }
 }

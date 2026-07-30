@@ -1,8 +1,8 @@
 {
-  "label": "pikchr",
-  "position": 3,
+  "label": "Pikchr",
+  "position": 5,
   "link": {
     "type": "generated-index",
-    "description": "pikchr related documentation and resources."
+    "description": "PIC-inspired markup language for technical diagrams."
   }
 }

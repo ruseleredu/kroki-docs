@@ -1,8 +1,8 @@
 {
-  "label": "dbml",
-  "position": 28,
+  "label": "DBML",
+  "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "dbml related documentation and resources."
+    "description": "Database Markup Language for defining and documenting relational database schemas."
   }
 }

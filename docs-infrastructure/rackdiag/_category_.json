@@ -1,8 +1,8 @@
 {
-  "label": "rackdiag",
-  "position": 6,
+  "label": "RackDiag",
+  "position": 5,
   "link": {
     "type": "generated-index",
-    "description": "rackdiag related documentation and resources."
+    "description": "Server rack layout diagram generator."
   }
 }

@@ -1,8 +1,8 @@
 {
-  "label": "vega",
-  "position": 31,
+  "label": "Vega",
+  "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "vega related documentation and resources."
+    "description": "Visualization grammar for declarative interactive graphics."
   }
 }

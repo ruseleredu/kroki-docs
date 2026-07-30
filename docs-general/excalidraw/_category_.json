@@ -1,8 +1,8 @@
 {
-  "label": "excalidraw",
-  "position": 27,
+  "label": "Excalidraw",
+  "position": 7,
   "link": {
     "type": "generated-index",
-    "description": "excalidraw related documentation and resources."
+    "description": "Virtual whiteboard tool for hand-drawn, sketch-style diagrams."
   }
 }

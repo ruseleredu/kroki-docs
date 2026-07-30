@@ -1,8 +1,8 @@
 {
-  "label": "erd",
-  "position": 12,
+  "label": "ERD",
+  "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "erd related documentation and resources."
+    "description": "Entity-Relationship diagram generator."
   }
 }

@@ -1,8 +1,8 @@
 {
-  "label": "nomnoml",
-  "position": 21,
+  "label": "Nomnoml",
+  "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "nomnoml related documentation and resources."
+    "description": "Lightweight tool for drawing UML class diagrams from simple grammar."
   }
 }

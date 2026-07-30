@@ -1,8 +1,8 @@
 {
-  "label": "ditaa",
-  "position": 15,
+  "label": "Ditaa",
+  "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "ditaa related documentation and resources."
+    "description": "Converts ASCII art text diagrams into clean vector graphics."
   }
 }

@@ -1,8 +1,8 @@
 {
-  "label": "mermaid",
-  "position": 11,
+  "label": "Mermaid",
+  "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "mermaid related documentation and resources."
+    "description": "Markdown-inspired syntax for generating flowcharts, sequence diagrams, and charts."
   }
 }

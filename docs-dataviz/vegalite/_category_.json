@@ -1,8 +1,8 @@
 {
-  "label": "vegalite",
-  "position": 14,
+  "label": "Vega-Lite",
+  "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "vegalite related documentation and resources."
+    "description": "High-level specification grammar built on top of Vega."
   }
 }

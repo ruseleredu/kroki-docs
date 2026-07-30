@@ -1,8 +1,8 @@
 {
-  "label": "seqdiag",
-  "position": 20,
+  "label": "SeqDiag",
+  "position": 7,
   "link": {
     "type": "generated-index",
-    "description": "seqdiag related documentation and resources."
+    "description": "Sequence diagram generator."
   }
 }

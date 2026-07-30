@@ -1,8 +1,8 @@
 {
-  "label": "d2",
-  "position": 9,
+  "label": "D2",
+  "position": 5,
   "link": {
     "type": "generated-index",
-    "description": "d2 related documentation and resources."
+    "description": "Modern, declarative diagram scripting language."
   }
 }

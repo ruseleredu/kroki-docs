@@ -1,8 +1,8 @@
 {
-  "label": "actdiag",
-  "position": 1,
+  "label": "ActDiag",
+  "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "actdiag related documentation and resources."
+    "description": "Activity diagram generator."
   }
 }

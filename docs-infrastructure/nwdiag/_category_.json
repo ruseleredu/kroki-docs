@@ -1,8 +1,8 @@
 {
-  "label": "nwdiag",
+  "label": "NwDiag",
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "nwdiag related documentation and resources."
+    "description": "Network diagram generator."
   }
 }

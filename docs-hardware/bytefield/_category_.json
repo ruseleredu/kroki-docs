@@ -1,8 +1,8 @@
 {
-  "label": "bytefield",
-  "position": 24,
+  "label": "Bytefield",
+  "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "bytefield related documentation and resources."
+    "description": "Tool for generating network protocol and memory layout packet diagrams."
   }
 }

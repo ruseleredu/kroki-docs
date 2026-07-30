@@ -1,8 +1,8 @@
 {
-  "label": "tikz",
-  "position": 10,
+  "label": "TikZ",
+  "position": 9,
   "link": {
     "type": "generated-index",
-    "description": "tikz related documentation and resources."
+    "description": "Programmatic graphics package for TeX/LaTeX."
   }
 }
