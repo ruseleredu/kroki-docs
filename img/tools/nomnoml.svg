@@ -1,4 +1,232 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="160" height="90" viewBox="0 0 160 90">
-  <rect width="100%" height="100%" fill="lightgray" stroke="black"/>
-  <text x="80" y="45" font-size="20" text-anchor="middle" dominant-baseline="central" fill="black">nomnoml</text>
+<svg version="1.1" baseProfile="full" width="563.4" height="566.0" viewBox="0 0 563.375 566" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+	<desc >[&lt;start&gt;start] -&gt; [&lt;state&gt;plunder] -&gt; [&lt;choice&gt;more loot] -&gt; [start]
+	[more loot] no -&gt;[&lt;end&gt;e]
+	
+	[Pirate|
+	  [beard]--[parrot]
+	  [beard]-:&gt;[foul mouth]
+	]
+	
+	[&lt;table&gt;mischief| bawl | sing || yell | drink ]
+	
+	[&lt;abstract&gt;Marauder]&lt;:--[Pirate]
+	[Pirate] - 0..7[mischief]
+	[&lt;actor id=sailor&gt;Jolly;Sailor]
+	[sailor]-&gt;[Pirate]
+	[sailor]-&gt;[rum]
+	[Pirate]-&gt; *[rum|tastiness: Int|swig()]
+	</desc>
+	<g stroke-width="1.0" text-align="left" font="12pt Helvetica, Arial, sans-serif" font-size="12pt" font-family="Helvetica" font-weight="normal" font-style="normal">
+		<g font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" stroke="#33322E">
+			<g stroke="transparent" fill="transparent">
+				<rect x="0.0" y="0.0" height="566.0" width="563.4" stroke="none"></rect>
+			</g>
+			<g transform="translate(8, 8)" fill="#33322E">
+				<g transform="translate(20, 20)" fill="#33322E" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal">
+					<path d="M65.9 51.0 L39.6 88.9 A12.0 12.0 0 0 0 37.5 95.7 L37.5 185.3 " fill="none"></path>
+					<path d="M32.2 178.7 L37.5 185.3 L42.8 178.7 L37.5 192.0 Z"></path>
+					<path d="M37.5 224.0 L37.5 320.8 A12.0 12.0 0 0 0 39.1 326.8 L59.3 362.2 " fill="none"></path>
+					<path d="M51.3 359.1 L59.3 362.2 L60.6 353.8 L62.6 368.0 Z"></path>
+					<path d="M89.9 368.0 L113.4 326.8 A12.0 12.0 0 0 0 115.0 320.8 L115.0 208.0 ANaN NaN 0 0 0 115.0 208.0 L115.0 95.7 A12.0 12.0 0 0 0 112.9 88.9 L90.4 56.5 " fill="none"></path>
+					<path d="M98.6 58.9 L90.4 56.5 L89.8 65.0 L86.6 51.0 Z"></path>
+					<text x="84.3" y="436.0" stroke="none">no</text>
+					<path d="M76.3 416.0 L76.3 460.0 ANaN NaN 0 0 0 76.3 460.0 L76.3 473.3 " fill="none"></path>
+					<path d="M70.9 466.7 L76.3 473.3 L81.6 466.7 L76.3 480.0 Z"></path>
+					<g stroke-dasharray="6 6">
+						<path d="M248.8 65.3 L248.8 89.6 A12.0 12.0 0 0 0 249.7 94.3 L257.3 112.0 " fill="none"></path>
+					</g>
+					<path d="M254.1 65.3 L248.8 65.3 L243.4 65.3 L248.8 52.0 Z"></path>
+					<text x="243.4" y="336.0" stroke="none">0..7</text>
+					<path d="M281.6 304.0 L278.3 323.0 A12.0 12.0 0 0 0 278.1 325.0 L278.1 344.0 " fill="none"></path>
+					<path d="M424.4 55.9 L372.3 90.6 A12.0 12.0 0 0 0 368.7 94.2 L361.2 106.3 " fill="none"></path>
+					<path d="M360.2 97.9 L361.2 106.3 L369.3 103.5 L357.7 112.0 Z"></path>
+					<path d="M467.2 72.0 L473.7 90.0 A12.0 12.0 0 0 1 474.4 94.1 L474.4 208.0 ANaN NaN 0 0 0 474.4 208.0 L474.4 322.3 A12.0 12.0 0 0 1 473.9 325.7 L470.4 337.6 " fill="none"></path>
+					<path d="M467.1 329.7 L470.4 337.6 L477.4 332.7 L468.5 344.0 Z"></path>
+					<text x="409.4" y="341.2" stroke="none">*</text>
+					<path d="M357.7 304.0 L369.1 322.3 A12.0 12.0 0 0 0 371.7 325.3 L396.2 345.0 " fill="none"></path>
+					<path d="M387.6 345.0 L396.2 345.0 L394.3 336.7 L401.4 349.2 Z"></path>
+					<g data-name="start">
+						<g fill="#33322E" stroke="#33322E" data-name="start">
+							<circle r="12.0" cx="76.3" cy="36.0" stroke="none" data-name="start"></circle>
+						</g>
+					</g>
+					<g data-name="plunder">
+						<g fill="#eee8d5" stroke="#33322E" data-name="plunder">
+							<rect x="0.0" y="192.0" rx="16.0" ry="16.0" height="32.0" width="75.0" data-name="plunder"></rect>
+						</g>
+						<g transform="translate(0, 192)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="plunder" data-compartment="0">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="plunder" data-compartment="0">
+								<text x="29.5" y="14.1" stroke="none" text-anchor="middle" data-name="plunder" data-compartment="0">plunder</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="more loot">
+						<g fill="#eee8d5" stroke="#33322E" data-name="more loot">
+							<path d="M76.3 368.0 L143.0 392.0 L76.3 416.0 L9.5 392.0 Z" data-name="more loot"></path>
+						</g>
+						<g transform="translate(31.75, 376)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="more loot" data-compartment="0">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="more loot" data-compartment="0">
+								<text x="36.5" y="14.1" stroke="none" text-anchor="middle" data-name="more loot" data-compartment="0">more loot</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="e">
+						<g fill="#33322E" stroke="#33322E" data-name="e">
+							<circle r="10.0" cx="76.3" cy="495.0" data-name="e"></circle>
+							<circle r="6.0" cx="76.3" cy="495.0" stroke="none" data-name="e"></circle>
+						</g>
+					</g>
+					<g data-name="Pirate">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Pirate">
+							<rect x="169.6" y="112.0" height="192.0" width="257.0" data-name="Pirate"></rect>
+							<path d="M169.6 144.0 L426.6 144.0" fill="none" data-name="Pirate"></path>
+						</g>
+						<g transform="translate(169.625, 112)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Pirate" data-compartment="0">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Pirate" data-compartment="0">
+								<text x="120.5" y="14.1" stroke="none" text-anchor="middle" data-name="Pirate" data-compartment="0">Pirate</text>
+								
+							</g>
+						</g>
+						<g transform="translate(169.625, 144)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Pirate" data-compartment="1">
+							<g transform="translate(8, 8)" fill="#33322E" data-name="Pirate" data-compartment="1">
+								<g transform="translate(20, 20)" fill="#eee8d5" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Pirate" data-compartment="1">
+									<g stroke-dasharray="6 6" data-name="Pirate" data-compartment="1">
+										<path d="M64.5 32.0 L36.8 48.5 A12.0 12.0 0 0 0 31.0 58.8 L31.0 72.0 " fill="none" data-name="Pirate" data-compartment="1"></path>
+									</g>
+									<path d="M118.0 32.0 L145.8 48.6 A11.7 11.7 0 0 1 151.5 58.7 L151.5 58.7 " fill="none" data-name="Pirate" data-compartment="1"></path>
+									<path d="M146.2 58.7 L151.5 58.7 L156.8 58.7 L151.5 72.0 Z" data-name="Pirate" data-compartment="1"></path>
+									<g data-name="beard">
+										<g fill="#fdf6e3" stroke="#33322E" data-name="beard">
+											<rect x="61.3" y="0.0" height="32.0" width="60.0" data-name="beard"></rect>
+										</g>
+										<g transform="translate(61.25, 0)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="beard" data-compartment="0">
+											<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="beard" data-compartment="0">
+												<text x="22.0" y="14.1" stroke="none" text-anchor="middle" data-name="beard" data-compartment="0">beard</text>
+												
+											</g>
+										</g>
+									</g>
+									<g data-name="parrot">
+										<g fill="#fdf6e3" stroke="#33322E" data-name="parrot">
+											<rect x="0.0" y="72.0" height="32.0" width="62.0" data-name="parrot"></rect>
+										</g>
+										<g transform="translate(0, 72)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="parrot" data-compartment="0">
+											<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="parrot" data-compartment="0">
+												<text x="23.0" y="14.1" stroke="none" text-anchor="middle" data-name="parrot" data-compartment="0">parrot</text>
+												
+											</g>
+										</g>
+									</g>
+									<g data-name="foul mouth">
+										<g fill="#fdf6e3" stroke="#33322E" data-name="foul mouth">
+											<rect x="102.0" y="72.0" height="32.0" width="99.0" data-name="foul mouth"></rect>
+										</g>
+										<g transform="translate(102, 72)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="foul mouth" data-compartment="0">
+											<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="foul mouth" data-compartment="0">
+												<text x="41.5" y="14.1" stroke="none" text-anchor="middle" data-name="foul mouth" data-compartment="0">foul mouth</text>
+												
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g data-name="mischief">
+						<g fill="#eee8d5" stroke="#33322E" data-name="mischief">
+							<rect x="227.1" y="344.0" height="96.0" width="102.0" data-name="mischief"></rect>
+							<path d="M227.1 376.0 L227.1 376.0" fill="none" data-name="mischief"></path>
+							<path d="M227.1 376.0 L329.1 376.0" fill="none" data-name="mischief"></path>
+							<path d="M227.1 408.0 L329.1 408.0" fill="none" data-name="mischief"></path>
+							<path d="M278.1 376.0 L278.1 440.0" fill="none" data-name="mischief"></path>
+							<path d="M329.1 376.0 L329.1 440.0" fill="none" data-name="mischief"></path>
+						</g>
+						<g transform="translate(227.125, 344)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="mischief" data-compartment="0">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="mischief" data-compartment="0">
+								<text x="43.0" y="14.1" stroke="none" text-anchor="middle" data-name="mischief" data-compartment="0">mischief</text>
+								
+							</g>
+						</g>
+						<g transform="translate(227.125, 376)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="mischief" data-compartment="1">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="mischief" data-compartment="1">
+								<text x="0.0" y="14.1" stroke="none" data-name="mischief" data-compartment="1">bawl</text>
+								
+							</g>
+						</g>
+						<g transform="translate(278.125, 376)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="mischief" data-compartment="2">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="mischief" data-compartment="2">
+								<text x="0.0" y="14.1" stroke="none" data-name="mischief" data-compartment="2">sing</text>
+								
+							</g>
+						</g>
+						<g transform="translate(227.125, 408)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="mischief" data-compartment="3">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="mischief" data-compartment="3">
+								<text x="0.0" y="14.1" stroke="none" data-name="mischief" data-compartment="3">yell</text>
+								
+							</g>
+						</g>
+						<g transform="translate(278.125, 408)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="mischief" data-compartment="4">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="mischief" data-compartment="4">
+								<text x="0.0" y="14.1" stroke="none" data-name="mischief" data-compartment="4">drink</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="Marauder">
+						<g fill="#eee8d5" stroke="#33322E" data-name="Marauder">
+							<rect x="204.8" y="20.0" height="32.0" width="88.0" data-name="Marauder"></rect>
+						</g>
+						<g transform="translate(204.75, 20)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="italic" data-name="Marauder" data-compartment="0">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Marauder" data-compartment="0">
+								<text x="36.0" y="14.1" stroke="none" text-anchor="middle" data-name="Marauder" data-compartment="0">Marauder</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="sailor">
+						<g fill="#eee8d5" stroke="#33322E" data-name="sailor">
+							<circle r="4.0" cx="454.4" cy="12.0" data-name="sailor"></circle>
+							<path d="M454.4 16.0 L454.4 24.0" fill="none" data-name="sailor"></path>
+							<path d="M450.4 20.0 L458.4 20.0" fill="none" data-name="sailor"></path>
+							<path d="M450.4 28.0 L454.4 24.0 L458.4 28.0" fill="none" data-name="sailor"></path>
+						</g>
+						<g transform="translate(424.375, 24)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="sailor" data-compartment="0">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="sailor" data-compartment="0">
+								<text x="22.0" y="14.1" stroke="none" text-anchor="middle" data-name="sailor" data-compartment="0">Jolly</text>
+								<text x="22.0" y="30.3" stroke="none" text-anchor="middle" data-name="sailor" data-compartment="0">Sailor</text>
+								
+							</g>
+						</g>
+					</g>
+					<g data-name="rum">
+						<g fill="#eee8d5" stroke="#33322E" data-name="rum">
+							<rect x="401.4" y="344.0" height="96.0" width="106.0" data-name="rum"></rect>
+							<path d="M401.4 376.0 L507.4 376.0" fill="none" data-name="rum"></path>
+							<path d="M401.4 408.0 L507.4 408.0" fill="none" data-name="rum"></path>
+						</g>
+						<g transform="translate(401.375, 344)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="rum" data-compartment="0">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="rum" data-compartment="0">
+								<text x="45.0" y="14.1" stroke="none" text-anchor="middle" data-name="rum" data-compartment="0">rum</text>
+								
+							</g>
+						</g>
+						<g transform="translate(401.375, 376)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="rum" data-compartment="1">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="rum" data-compartment="1">
+								<text x="0.0" y="14.1" stroke="none" data-name="rum" data-compartment="1">tastiness: Int</text>
+								
+							</g>
+						</g>
+						<g transform="translate(401.375, 408)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="rum" data-compartment="2">
+							<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="rum" data-compartment="2">
+								<text x="0.0" y="14.1" stroke="none" data-name="rum" data-compartment="2">swig()</text>
+								
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
 </svg>
