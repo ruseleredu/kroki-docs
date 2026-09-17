@@ -101,6 +101,7 @@ const navbarItems: NavbarItem[] = [
         type: 'dropdown',
         items: [
             { href: 'https://mermaid.live', label: 'Mermaid' },
+            { href: 'https://codeshot.io/', label: 'codeshot.io' },
         ],
 
     },
