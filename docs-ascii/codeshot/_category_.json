@@ -1,0 +1,8 @@
+{
+  "label": "codeshot",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "codeshot ASCII-to-SVG diagram parser and renderer."
+  }
+}

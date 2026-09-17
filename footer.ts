@@ -106,8 +106,8 @@ const footerconst: ThemeConfig["footer"] = {
                     href: "https://code.visualstudio.com/download",
                 },
                 {
-                    label: "Git SCM",
-                    href: "https://git-scm.com/downloads",
+                    label: "codeshot.io",
+                    href: "https://codeshot.io/",
                 },
                 {
                     label: "GitHub CLI",
